@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC&QR Menu</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row nav" id="navLox">
+                <div class="col-1 logo" onclick="scrollToTop()">
+                    <img src="icons/logo.svg" alt="logo">
+                </div>
+                <div class="col xuy">
+                    <div class="col-5 nav_menu">
+                        <ul class="nav_menu_link">
+                            <li><a href="#how_it_work_link">Как это работает?</a></li>
+                            <li><a href="#advantages_link">Преимущества</a></li>
+                            <li><a href="#connection_link">Подключение</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 opt_butt">
+                        <ul class="opt_butt_menu">
+                            <li>Презентация</li>
+                            <li onclick="consultByTel(event)">Консультация по телефону</li>
+                            <li><span> <a href="authorization.html">Авторизация</a> </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="authorization_wrapper">
+        <div class="authorization_window">
+            <button class="cross" onclick="consultByTel()"><img src="icons/close.png" alt="close"></button>
+            <h4>Консультация по телефону</h4>
+            <div class="input_form">
+                <input type="text" name="" placeholder="Ваше имя">
+            </div>
+            <div class="input_form">
+                <input type="" name="" placeholder="Номер телефона">
+            </div>
+            <div class="input_form">
+                <input type="text" name="" placeholder="Город">
+            </div>
+            <div class="btn_wrapper">
+                <button>
+                    <span>
+                        Оставить заявку
+                    </span>
+                </button>
+            </div>
+    
+        </div>
+    </div>
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo_main">
+                <div class="col promo_name">
+                    <h1 class="promo_header"><span>NFC</span>&<span>QR</span><br>MENU</h1>
+                    <h2 class="promo_header_descr">Это удобное онлайн-меню<br>в смартфоне с функциями<br>оформления и оплаты заказа<br>без участия официанта</h2>
+                    <div class="row justify-content-start">
+                        <div class="col promo_demo">
+                            <button class="promo_demo_menu">Демо-меню</button>
+                            <button class="promo_create_menu">Создать меню</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="how_it_work">
+        <a name="how_it_work_link" class="how_it_work_link" id="hiw_link"></a>
+        <div class="container">
+
+            <h3 class="how_it_work_title">КАК ЭТО <span>РАБОТАЕТ?</span></h3>
+
+            <div class="work_seq">
+                <div class="seq_block">
+                    <div class="seq_num trans">
+                        1
+                    </div>
+                    <div class="seq_text">
+                        Вы размещаете NFC-метки<br>и QR-коды
+                    </div>
+                </div>
+                <div class="seq_block">
+                    <div class="seq_num">
+                        2
+                    </div>
+                    <div class="seq_text trans">
+                        Посетитель открывает<br>меню
+                    </div>
+                </div>
+                <div class="seq_block">
+                    <div class="seq_num trans">
+                        3
+                    </div>
+                    <div class="seq_text">
+                        Заказ отправляется в Ваш<br>личный кабинет на сайте
+                    </div>
+                </div>
+                <div class="seq_block">
+                    <div class="seq_num">
+                        4
+                    </div>
+                    <div class="seq_text trans">
+                        Посетитель оплачивает<br>заказанные блюда
+                    </div>
+                </div>
+                <div class="seq_block">
+                    <div class="seq_num trans">
+                        5
+                    </div>
+                    <div class="seq_text">
+                        Официант приносит заказ
+                    </div>
+                </div>
+            </div>
+            <p class="how_it_work_max">Максимум возможностей на устройстве клиента!</p>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <a name="advantages_link" class="advantages_link" id="adv_link"></a>
+        <div class="container">
+            <h3>ПРЕИМУЩЕСТВА</h3>
+            <div class="row" style="margin-top: 55px;">
+                <div class="col">
+                    <div class="advantages_first_col">
+                        <div class="advantages_comfort">
+                            <div class="advantages_comfort_title">
+                                <div class="advantages_comfort_text">Удобство для клиентов</div>
+                                <img style="margin-top: -15px; margin-left: -13px;" src="icons/emoji1.png" alt="emoji1">
+                            </div>
+                            <ul>
+                                <li>Не нужно ждать официанта</li>
+                                <li>Расчет без ожидания чека</li>
+                                <li>Удобная система оплаты (Apple Pay, Google Pay,<br>ввод реквизитов карты, вызов официанта<br>для расчета наличными)</li>
+                                <li>Полная информация о блюде</li>
+                                <li>Бесконтактный способ оплаты заказа более гигиеничен</li>
+                                <li>Отслеживание статуса готовности блюда</li>
+                                <li>Официант не ошибится и не забудет записать блюдо</li>
+                            </ul>
+                        </div>
+                        <div class="advantages_crm">
+                            <div class="advantages_crm_title">
+                                <div class="advantages_crm_text">CRM-система</div>
+                                <img style="margin-top: -15px; margin-left: -13px;" src="icons/emoji2.png" alt="emoji2">
+                            </div>
+                            <ul>
+                                <li>Формирование отчёта для таргетированной рекламы</li>
+                                <li>Информация о загруженности зала (наиболее<br>загруженный день/час)</li>
+                                <li>Информация о сумме среднего чека</li>
+                                <li>Информация о скорости обслуживания</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col advantages_second_col_main">
+                    <div class="advantages_second_col">
+                        <div class="advantages_costs">
+                            <div class="advantages_costs_title">
+                                <div class="advantages_costs_text">Снижение затрат</div>
+                                <img style="margin-top: -15px; margin-left: -13px;" src="icons/emoji3.png" alt="emoji3">
+                            </div>
+                            <ul>
+                                <li>Сокращение штата официантов</li>
+                                <li>Увеличение производительности кухни</li>
+                                <li>Не нужно тратить деньги на печать бумажных меню</li>
+                                <li>Решение проблемы неоплаченных заказов (оплата перед<br>отправкой заказа на кухню) </li>
+                            </ul>
+                        </div>
+                        <div class="advantages_management">
+                            <div class="advantages_management_title">
+                                <div class="advantages_management_text">Управление ассортиментом</div>
+                                <img style="margin-top: -15px; margin-left: -13px;" src="icons/emoji4.png" alt="emoji4">
+                            </div>
+                            <ul>
+                                <li>Простое добавление и удаление блюд из меню</li>
+                                <li>Быстрое создание акций</li>
+                                <li>Информация о блюдах (БЖУ, калорийность, вес и т.д.)</li>
+                                <li>Возможность обновлять фотографии блюд</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="connection">
+        <a name="connection_link" class="connection_link" id="con_link"></a>
+        <h3>ПОДКЛЮЧЕНИЕ</h3>
+        <div class="container connection_con">
+            <div class="connection_bg">
+                <h4 class="connection_title">Первый месяц бесплатно!</h4>
+                <div class="row">
+                    <div class="col connection_sub" onmouseover="showDescr(event)" id="0">
+                        <div class="connection_sub_title" id="0">
+                            Подписка<br>на месяц
+                        </div>
+                        <div class="connection_sub_price" id="0">
+                            4.990₽
+                        </div>
+                    </div>
+                    <div class="col connection_sub" onmouseover="showDescr(event)" id="1">
+                        <div class="connection_sub_title span" id="1">
+                            Подписка<br>на полгода
+                        </div>
+                        <div class="connection_sub_price" id="1">
+                            27.990₽
+                        </div>
+                    </div>
+                    <div class="col connection_sub" onmouseover="showDescr(event)" id="2">
+                        <div class="connection_sub_title" id="2">
+                            Подписка<br>на год
+                        </div>
+                        <div class="connection_sub_price" id="2">
+                            49.990₽
+                        </div>
+                    </div>
+                </div>
+                <div class="connection_descr">*Оборудование одного стола – <span>1.490₽</span></div>
+                <div class="connection_btn">
+                    <button class="connection_btn_text">Создать меню</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer_con">
+            <img src="icons/logo.svg" alt="logo">
+            <div class="col p-0 footer_docs">
+                <ul class="nav_footer">
+                    <li>Договор</li>
+                    <li>Политика конфиденциальности</li>
+                </ul>
+                <ul class="nav_footer">
+                    <li>Условия использования</li>
+                    <li>Пользовательского соглашения</li>
+                </ul>
+            </div>
+            <div class="col-4 footer_cont">
+                <div class="footer_contacts">nfcproject00@gmail.com</div>
+                <div class="footer_contacts"> 8(903)988-33-41</div>
+            </div>
+        </div>
+        <div class="container footer_brand">
+            <div class="footer_naming">© 2021 NFC Project</div>
+            <div class="soc_media">
+                <img src="icons/vk-brands.svg" alt="vk">
+                <img style="width: 30%; height: 90%" src="icons/instagram-brands.svg" alt="insta">    
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js" type="text/javascript"></script>
+<script></script>
+</html>
